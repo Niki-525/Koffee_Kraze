@@ -65,6 +65,7 @@ public class TakeoverManager : MonoBehaviour
 
         if (Value >= 1f)
         {
+            ESP32WebSocketController.Instance.Buzz(500);
             GameEvents.RaiseGameOver();
             return;
         }
@@ -72,6 +73,7 @@ public class TakeoverManager : MonoBehaviour
         if (!_offerActive && Value >= buyoutOfferThreshold)
         {
             _offerActive = true;
+            ESP32WebSocketController.Instance.Buzz(500);
             GameEvents.RaiseBuyoutOffered();
         }
         else if (_offerActive && Value < buyoutResetThreshold)
