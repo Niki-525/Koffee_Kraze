@@ -9,7 +9,6 @@ using UnityEngine.UI;
 
 namespace BusinessSim
 {
-    // --- Data Models for Gemini REST Payload (Plain Text) ---
     [Serializable]
     public class TextPart
     {
@@ -71,7 +70,6 @@ namespace BusinessSim
         public TMP_Text bossDialogueDisplay;
         public Button sendButton;
 
-        // Conversation history for context retention across turns
         private List<ContentTurn> conversationHistory = new List<ContentTurn>();
         private Coroutine activeRequest;
 
