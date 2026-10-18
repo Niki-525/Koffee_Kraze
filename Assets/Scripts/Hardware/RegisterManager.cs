@@ -54,6 +54,13 @@ public class RegisterManager : MonoBehaviour
         Instance = this;
 
         AddDevice(new KeyboardRegisterDevice());
+
+        var esp = GetComponent<ESP32WebSocketController>();
+        if (esp == null) esp = gameObject.AddComponent<ESP32WebSocketController>();
+        AddDevice(esp);
+
+        Application.runInBackground = true;
+
         if (mode == Mode.SerialAndKeyboard) TryConnectSerial();
     }
 
@@ -156,7 +163,8 @@ public class RegisterManager : MonoBehaviour
     void HandleDrawer() => DrawerPressed?.Invoke();
 
     void HandleKey(char c)
-    {
+    {   
+        Debug.Log("Handle Key : " + c);
         if (c >= '0' && c <= '9')
         {
             int limit = (int)Math.Pow(10, Mathf.Max(1, maxEntryDigits) - 1);

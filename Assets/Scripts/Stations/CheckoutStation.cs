@@ -76,6 +76,7 @@ public class CheckoutStation : Station
             RegisterManager.Instance?.OpenDrawer();
             RegisterManager.Instance?.ShowLines("THANK YOU", EconomyManager.Format(_collected));
 
+            ESP32WebSocketController.Instance.SetLeds(0,1);
             if (requireDrawerConfirm)
             {
                 _awaitingDrawer = true;
@@ -93,6 +94,8 @@ public class CheckoutStation : Station
                 feedbackText.text = $"Wrong change! (-{EconomyManager.Format(wrongAttemptPenaltyCents)} each mistake)";
             RegisterManager.Instance?.ClearEntry();
             RegisterManager.Instance?.ShowLines("WRONG CHANGE", "TRY AGAIN");
+            ESP32WebSocketController.Instance.SetLeds(1,0);
+            ESP32WebSocketController.Instance.Buzz(500);
         }
     }
 
@@ -105,6 +108,7 @@ public class CheckoutStation : Station
     {
         _awaitingDrawer = false;
         GameEvents.RaiseCheckoutCompleted(_collected);
+        ESP32WebSocketController.Instance.SetLeds(0,0);
         Complete();
     }
 
