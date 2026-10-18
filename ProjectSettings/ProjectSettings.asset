@@ -679,7 +679,7 @@ PlayerSettings:
   gcIncremental: 1
   gcWBarrierValidation: 0
   apiCompatibilityLevelPerPlatform: {}
-  editorAssembliesCompatibilityLevel: 1
+  editorAssembliesCompatibilityLevel: 2
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   metroPackageName: My project (4)
@@ -757,16 +757,16 @@ PlayerSettings:
   hmiCpuConfiguration: 
   hmiLogStartupTiming: 0
   qnxGraphicConfPath: 
-  apiCompatibilityLevel: 6
+  apiCompatibilityLevel: 3
   captureStartupLogs: {}
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
   enableDirectStorage: 0
-  cloudProjectId: 
+  cloudProjectId: a9a1aed6-0947-47e6-8601-d18bab7e8d42
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: My project (4)
+  organizationId: unity_89821ae96c9978bc1c5b
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}

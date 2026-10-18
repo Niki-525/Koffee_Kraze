@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acf72366cdd3e204bb28ce1801864500, type: 3}
+  m_Name: caramel_latte
+  m_EditorClassIdentifier: Assembly-CSharp::DrinkRecipeSO
+  id: caramel_latte
+  displayName: Caramel Latte
+  basePriceCents: 500
+  baseIngredient: {fileID: 11400000, guid: de1f19b83813a2a4182fd38633d0d9d4, type: 2}
+  milk: {fileID: 11400000, guid: 4e50912def1fec340bc8a17ee9af7099, type: 2}
+  syrups:
+  - {fileID: 11400000, guid: 68a9fa6cb53f22844be952e7405088d8, type: 2}
+  toppings: []
+  idealBrewSeconds: 25
+  unlockDay: 1

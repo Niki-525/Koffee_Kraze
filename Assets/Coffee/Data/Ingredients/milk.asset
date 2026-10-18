@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bec0ab48fd1f63340b84b27f617b51f7, type: 3}
+  m_Name: milk
+  m_EditorClassIdentifier: Assembly-CSharp::IngredientSO
+  id: milk
+  displayName: Milk
+  kind: 1
+  icon: {fileID: 21300000, guid: 8815a5a093685dc4396631ba5e5ee944, type: 3}
+  prefab3D: {fileID: 4427652957763265855, guid: 89edfc425b2e6644897d19142256da62, type: 3}
+  cost: 20
+  unlockDay: 1
