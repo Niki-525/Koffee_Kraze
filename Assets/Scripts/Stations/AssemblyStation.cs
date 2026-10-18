@@ -55,7 +55,6 @@ public class AssemblyStation : Station
 
         BuildTray();
         RefreshCup();
-        SetSize(Drink.size);
         ShowTicket();
     }
 
